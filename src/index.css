@@ -1,0 +1,237 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+/* Configuração base do Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globais */
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do componente de login/cadastro */
+
+.login-page {
+    position: fixed; /* Garante que ocupe toda a tela */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 166, 0, 0.63); /* Cor de fundo laranja */
+}
+
+.form {
+    background: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    padding: 45px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    border-radius: 7px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #e2c956f6;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #d1b54d;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #e2c956f6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 640px) {
+    .form {
+        padding: 30px;
+    }
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .historia {
+        padding-right: 0;
+    }
+}
+
+
+/* Estilos de contatos */
+
+.contatos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.contato-info {
+    text-align: center;
+}
+
+.contato-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contato-info p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+.imagem-contato {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.imagem-contato img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contato-formulario {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contato-formulario h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contato-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-formulario input,
+.contato-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.contato-formulario button {
+    background-color: #e2c956;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato-formulario button:hover {
+    background-color: #d1b54d;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contatos-container {
+        padding: 20px;
+    }
+
+    .contato-info h2 {
+        font-size: 24px;
+    }
+
+    .contato-formulario h3 {
+        font-size: 20px;
+    }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
