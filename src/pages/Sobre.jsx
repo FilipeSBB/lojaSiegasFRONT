@@ -10,7 +10,8 @@ const Sobre = () => {
         <div className="md:w-1/2">
           <h2 className="text-4xl font-serif mb-6">Nossa História</h2>
           <p className="text-lg leading-relaxed text-gray-800">
-            Em busca de realizar esse sonho, ele decidiu abrir a loja no coração de Pelotas, no centro da cidade, um local estratégico que facilitasse o acesso e aproximasse nossos clientes do que há de melhor em conforto e estilo para o dia a dia.
+A Loja Siegas nasceu da paixão e da experiência de uma família dedicada ao segmento de cama, mesa e banho há mais de 27 anos. Foi o sonho do nosso fundador, meu pai, que durante décadas trabalhou com dedicação e compromisso para oferecer produtos de qualidade que transformam a casa em um verdadeiro lar.
+Em busca de realizar esse sonho, ele decidiu abrir a loja no coração de Pelotas, no centro da cidade, um local estratégico que facilitasse o acesso e aproximasse nossos clientes do que há de melhor em conforto e estilo para o dia a dia.
 Aqui na Siegas, continuamos a tradição familiar com muito carinho, prezando pela excelência no atendimento e a seleção cuidadosa dos produtos, para levar até você o melhor em qualidade e design. Nossa história é feita de trabalho, confiança e da certeza de que cada cliente merece o melhor.
 Venha nos visitar e faça parte da família Siegas!
             <br /><br />
