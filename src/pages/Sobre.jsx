@@ -10,23 +10,13 @@ const Sobre = () => {
         <div className="md:w-1/2">
           <h2 className="text-4xl font-serif mb-6">Nossa História</h2>
           <p className="text-lg leading-relaxed text-gray-800">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
-            vehicula eros. Nullam semper nec lacus eget condimentum. Curabitur
-            accumsan, nisi id pellentesque elementum, eros risus accumsan nisl,
-            at convallis nisi nunc et odio. Nam interdum justo non est posuere
-            vehicula. Fusce fringilla felis quis mi feugiat scelerisque.
+            Em busca de realizar esse sonho, ele decidiu abrir a loja no coração de Pelotas, no centro da cidade, um local estratégico que facilitasse o acesso e aproximasse nossos clientes do que há de melhor em conforto e estilo para o dia a dia.
+Aqui na Siegas, continuamos a tradição familiar com muito carinho, prezando pela excelência no atendimento e a seleção cuidadosa dos produtos, para levar até você o melhor em qualidade e design. Nossa história é feita de trabalho, confiança e da certeza de que cada cliente merece o melhor.
+Venha nos visitar e faça parte da família Siegas!
             <br /><br />
-            Aenean malesuada eu tortor ac consequat. Donec et purus vitae libero
-            mollis eleifend. Phasellus suscipit bibendum odio, a fermentum risus
-            tincidunt at. Praesent eget elit id purus sodales euismod ut at orci.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae; Suspendisse potenti.
+      
             <br /><br />
-            Aliquam erat volutpat. Donec fringilla felis vitae quam interdum
-            tincidunt. Integer ultricies lacus vitae mi pretium, ut fringilla
-            odio vehicula. Nam dapibus, arcu nec pulvinar volutpat, nisi libero
-            gravida lacus, ut accumsan mi ipsum vel tortor. Donec dignissim
-            ultrices felis, ac interdum libero ornare et.
+          
           </p>
         </div>
 
