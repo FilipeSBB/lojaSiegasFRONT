@@ -45,11 +45,11 @@ const ProdutosDestaque = () => {
               <Link to={`/produto/${produto.id}`} key={produto.id}> {/* aqui */}
                 <div className="relative bg-white rounded-md shadow-md overflow-hidden transition duration-300 hover:shadow-lg cursor-pointer">
                   <div className="w-full h-60 overflow-hidden">
-                    <img
-                      src={produto.imagem.split(',')[0].trim()}
-                      alt={produto.nome}
-                      className="w-full h-full object-cover object-center"
-                    />
+               <img
+  src={Array.isArray(produto.imagem) ? produto.imagem[0] : produto.imagem}
+  alt={produto.nome}
+  className="w-full h-full object-cover object-center"
+/>
                   </div>
 
                   <div className="absolute top-2 left-2 space-y-1 z-10">
