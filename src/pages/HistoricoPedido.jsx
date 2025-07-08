@@ -15,7 +15,7 @@ const HistoricoPedidos = () => {
       }
 
       try {
-        const response = await axios.get("http://localhost:55000/pedidos");
+        const response = await axios.get("https://lojasiegasbackend.onrender.com/pedidos");
 
         const pedidosFiltrados = response.data
           .filter(p => p.clienteId === clienteId)

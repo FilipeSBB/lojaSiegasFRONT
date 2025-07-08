@@ -75,7 +75,7 @@ const PagamentoPix = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:55000/pedidos', {
+      const response = await fetch('https://lojasiegasbackend.onrender.com/pedidos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -16,7 +16,7 @@ const DetalhesProduto = () => {
   useEffect(() => {
     const fetchProduto = async () => {
       try {
-        const response = await fetch(`http://localhost:55000/listarprodutos/${id}`);
+        const response = await fetch(`https://lojasiegasbackend.onrender.com/listarprodutos/${id}`);
         if (response.ok) {
           const data = await response.json();
           setProduto(data);
@@ -48,7 +48,7 @@ const DetalhesProduto = () => {
     const fetchRelacionados = async () => {
       if (produto?.categorias) {
         try {
-          const res = await fetch('http://localhost:55000/listarprodutos');
+          const res = await fetch('https://lojasiegasbackend.onrender.com/listarprodutos');
           const data = await res.json();
           const filtrados = data.filter(p =>
             p.categorias === produto.categorias && p.id !== produto.id
