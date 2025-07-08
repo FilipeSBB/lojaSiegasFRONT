@@ -10,7 +10,7 @@ const ProdutosDestaque = () => {
   const fetchProdutos = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:55000/siega/destaques"
+        "https://lojasiegasbackend.onrender.com/siega/destaques"
       );
       setProdutos(response.data);
       setLoading(false);

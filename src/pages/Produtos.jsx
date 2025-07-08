@@ -13,7 +13,7 @@ const Produtos = () => {
 
   const fetchProdutos = async () => {
     try {
-      const response = await fetch("http://localhost:55000/listarprodutos");
+      const response = await fetch("https://lojasiegasbackend.onrender.com/listarprodutos");
       if (response.ok) {
         const data = await response.json();
         data.forEach((produto, index) => {
