@@ -46,7 +46,7 @@ const ProdutosDestaque = () => {
                 <div className="relative bg-white rounded-md shadow-md overflow-hidden transition duration-300 hover:shadow-lg cursor-pointer">
                   <div className="w-full h-60 overflow-hidden">
                     <img
-                      src={produto.imagem}
+                      src={produto.imagem.split(',')[0].trim()}
                       alt={produto.nome}
                       className="w-full h-full object-cover object-center"
                     />
