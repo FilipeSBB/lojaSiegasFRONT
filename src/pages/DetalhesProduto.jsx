@@ -44,24 +44,24 @@ const DetalhesProduto = () => {
     fetchProduto();
   }, [id]);
 
-  useEffect(() => {
-    const fetchRelacionados = async () => {
-      if (produto?.categorias) {
-        try {
-          const res = await fetch('https://lojasiegasbackend.onrender.com/listarprodutos');
-          const data = await res.json();
-          const filtrados = data.filter(p =>
-            p.categorias === produto.categorias && p.id !== produto.id
-          );
-          setRelacionados(filtrados);
-        } catch (error) {
-          console.error("Erro ao buscar relacionados:", error);
-        }
+ useEffect(() => {
+  const fetchRelacionados = async () => {
+    if (produto?.categorias) {
+      try {
+        const res = await fetch('https://lojasiegasbackend.onrender.com/listarprodutos');
+        const data = await res.json();
+        const filtrados = data
+          .filter(p => p.categorias === produto.categorias && p.id !== produto.id)
+          .slice(0, 4); // <- limita a 4 produtos
+        setRelacionados(filtrados);
+      } catch (error) {
+        console.error("Erro ao buscar relacionados:", error);
       }
-    };
+    }
+  };
 
-    fetchRelacionados();
-  }, [produto]);
+  fetchRelacionados();
+}, [produto]);
 
   const adicionarAoCarrinho = () => {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
