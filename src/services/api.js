@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:55000', // Altere para a URL do seu backend
+    baseURL: '"https://lojasiegasbackend.onrender.com/clientes"', // Altere para a URL do seu backend
 });
 
 export const loginUser = async (email, senha) => {
