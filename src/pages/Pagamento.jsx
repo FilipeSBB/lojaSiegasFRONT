@@ -59,7 +59,7 @@ const Pagamento = () => {
     setErroMsg('');
     setSucessoMsg('');
 
-    const clienteId = localStorage.getItem('clienteId'); // ajustar conforme seu storage
+    const clienteId = localStorage.getItem('clienteId'); 
 
     if (!clienteId) {
       setErroMsg('Você precisa estar logado para finalizar o pedido.');

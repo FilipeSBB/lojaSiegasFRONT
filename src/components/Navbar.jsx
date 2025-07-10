@@ -155,7 +155,7 @@ const handleLogout = () => {
           )}
         </Link>
 
-        {/* Menu Mobile */}
+        {/* Menu Mobile ( Não está responsivo, ajustar depois ) */}
         <img
           onClick={() => setVisible(true)}
           src={assets?.menu_icon}
@@ -164,7 +164,7 @@ const handleLogout = () => {
         />
       </div>
 
-      {/* Sidebar Mobile */}
+      {/* Sidebar Mobile ( Não está responsivo, ajustar depois) */}
       <div
         className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${
           visible ? 'w-full' : 'w-0'

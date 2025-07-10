@@ -1,6 +1,5 @@
 import React from 'react';
-import lojaFisica from '../assets/lojafisica.png'; // ajuste o caminho conforme a estrutura do seu projeto
-
+import lojaFisica from '../assets/lojafisica.png'; // caminho pro projeto
 const Sobre = () => {
   return (
     <div className="flex flex-col min-h-screen px-6 py-12 md:px-24 bg-white">
